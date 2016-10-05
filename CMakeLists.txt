@@ -185,6 +185,7 @@ if(NOT BROTLI_BUNDLED_MODE)
       install(TARGETS ${BROTLI_LIBRARIES_CORE} RUNTIME DESTINATION bin)
     else()
       install(TARGETS ${BROTLI_LIBRARIES_CORE} LIBRARY DESTINATION lib)
+      install(DIRECTORY include/brotli DESTINATION include)
     endif()
   endif()
 
